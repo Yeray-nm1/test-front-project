@@ -23,7 +23,7 @@ jobs:
       - name: Run AI PR Reviewer
         uses: Yeray-nm1/ai-pr-review@main
         with:
-          gemini_api_key: ${{ secrets.GEMINI_API_KEY }}
-          gemini_model: gemini-1.5-flash
+          groq_api_key: ${{ secrets.GROQ_API_KEY }}
+          groq_model: llama-3.1-8b-instant
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
