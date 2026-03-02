@@ -6,6 +6,7 @@ import Button from "./components/Button";
 const App: React.FC = () => {
   const [count, setCount] = useState(0);
   const [message, setMessage] = useState("");
+  const [er, setEr] = useState();
 
   useEffect(() => {
     // BUG: missing dependency array causes this to run on every render
