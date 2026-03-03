@@ -11,7 +11,7 @@ const App: React.FC = () => {
   useEffect(() => {
     // BUG: missing dependency array causes this to run on every render
     setMessage(`Button clicked ${count} times`);
-  });
+  }, []);
 
   return (
     <div style={{ fontFamily: "sans-serif", padding: "2rem" }}>
