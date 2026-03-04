@@ -9,7 +9,6 @@ const App: React.FC = () => {
     <div style={{ fontFamily: "sans-serif", padding: "2rem" }}>
       <h1>Fake Frontend Project</h1>
       <p>{message}</p>
-      <Button label="Click me" onClick={() => setCount((c) => c + 1)} />
     </div>
   );
 };
